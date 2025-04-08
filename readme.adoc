@@ -37,14 +37,14 @@ nticks(clock,V) count-as c(V).
 
 ## Notes
 
-* The specification of the norms and sanctions are in file link:./src/org/demo.npl[demo.npl]
-* The institutional specification is in file link:./src/org/constitutive.sai[constitutive.sai]
+* The specification of the norms and sanctions are in file link:./src/reg/demo.npl[demo.npl]
+* The institutional specification is in file link:./src/reg/constitutive.sai[constitutive.sai]
 
 * The application is executed by agent Karlos that:
 
   - Creates the artifact `NormativeBoard` that is responsible to compute obligations and sanctions based on the normative specification of `demo.npl`.
   - Creates the artifact link:./src/env/police/Sanctioner.java[`Sanctioner`] that is responsible to implement in the environment the (brute) consequences of sanctions.
-  - Connects the `NormativeBoard` to the institution set in link:sanction.jcm[sanction.jcm].
+  - Connects the `NormativeBoard` to the institution set in link:example1.jcm[sanction.jcm].
   - Sets up the clock that produces the environmental facts that further constitute institutional facts.
   - Monitors the normative events and prints some of them.
 
