@@ -7,7 +7,7 @@ status_functions:
 
 events: b(V).
 
-states: oblUnfulfilled(O), vl(V), extra(V), sanct(V).
+states: oblUnfulfilled(O), vl(V), extra(V), sanct(V), detect(O).
 
 
 
@@ -19,6 +19,6 @@ constitutive_rules:
 
 2: nticks(clock,V) count-as extra(2) while V>=5000.
 
-3: count-as detect(10, O) while oblUnfulfilled(O).
+3: count-as detect(O) while oblUnfulfilled(O).
 
 4: count-as sanct(0) .
